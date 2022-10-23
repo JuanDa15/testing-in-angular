@@ -15,7 +15,7 @@ class HostComponent {
   selectedColor = new FormControl('');
 }
 
-fdescribe('HighlightDirective test', () => {
+describe('HighlightDirective test', () => {
 
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;

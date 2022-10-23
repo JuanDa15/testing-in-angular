@@ -16,7 +16,7 @@ class HostComponent {
 }
 
 
-fdescribe('ReversePipe', () => {
+describe('ReversePipe', () => {
 
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;

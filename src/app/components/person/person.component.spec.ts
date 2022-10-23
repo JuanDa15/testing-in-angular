@@ -100,7 +100,7 @@ class HostComponent {
     this.selectedPerson = e;
   }
 }
-fdescribe('Person component from host component', () => {
+describe('Person component from host component', () => {
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;
 
