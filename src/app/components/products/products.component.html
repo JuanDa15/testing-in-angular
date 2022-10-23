@@ -1,0 +1,18 @@
+<section class="container">
+  <h1>Products component</h1>
+  <div class="my-grid">
+    <product *ngFor="let product of products" [product]="product"></product>
+  </div>
+  <button type="button"
+          id="load-products"
+          [disabled]="status === 'loading'"
+          (click)="getAllProducts()">
+    <span *ngIf="status === 'init' || status === 'success'">Load more</span>
+    <span *ngIf="status === 'loading'">Loading</span>
+    <span *ngIf="status === 'error'">Error</span>
+  </button>
+  <section>
+    <button type="button" id="promise-button" (click)="callPromise()">Call Promise</button>
+    <p id="promise-answer" *ngIf="promiseAnswer">{{promiseAnswer}}</p>
+  </section>
+</section>

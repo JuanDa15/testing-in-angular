@@ -1,0 +1,16 @@
+<section class="container">
+  <article *ngIf="selected" id="selected-person-container">
+    <h2>Selected person: </h2>
+    <ul>
+      <li id="selected-name">name: <b>{{selected.name}} {{selected.lastName}}</b></li>
+      <li id="selected-age">age: <b>{{selected.age}}</b></li>
+      <li id="selected-height">height: <b>{{selected.height}}</b></li>
+      <li id="selected-weight">weight: <b>{{selected.weight}}</b></li>
+    </ul>
+  </article>
+  <h1>Count: {{people.length}}</h1>
+  <app-person *ngFor="let person of people"
+              [person]="person"
+              (onSelected)="seledtedPerson( $event )">
+  </app-person>
+</section>

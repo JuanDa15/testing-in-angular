@@ -1,0 +1,11 @@
+<section class="container">
+  <h3>Directiva</h3>
+  <p highlight>Default color</p>
+  <p [highlight]="selectedColor.value">Personalized color</p>
+  <input type="color" [formControl]="selectedColor">
+
+  <h3>Pipe</h3>
+  <p>{{'juan david osorio ortiz' | reverse}}</p>
+  <input type="text" [formControl]="wordToReverse">
+  <p>{{ wordToReverse.value | reverse}}</p>
+</section>

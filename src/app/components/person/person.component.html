@@ -1,0 +1,13 @@
+<h3>Hola, {{ person.name }}</h3>
+<p>My height is {{ person.height }}, and my weight is {{ person.weight }}</p>
+<p>Finally my age is {{ person.age }}</p>
+<button id="calcIMC"
+        type="button"
+        (click)="calcIMC()">
+  IMC: {{ imc }}
+</button>
+<button id="emitterBtn"
+        type="button"
+        (click)="emitPerson()">
+  Choose person
+</button>
